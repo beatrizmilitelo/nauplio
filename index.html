@@ -1,247 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nauplio Analytics</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        body{
-            background:#f4f7fa;
-            color:#333;
-        }
-
-        header{
-            background:linear-gradient(135deg,#002855,#00509d);
-            color:white;
-            text-align:center;
-            padding:40px 20px;
-        }
-
-        header img{
-            width:180px;
-            max-width:90%;
-            margin-bottom:20px;
-        }
-
-        header h1{
-            font-size:42px;
-            margin-bottom:10px;
-        }
-
-        header p{
-            font-size:22px;
-            font-weight:300;
-        }
-
-        nav{
-            background:white;
-            box-shadow:0 2px 10px rgba(0,0,0,.1);
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-        }
-
-        nav li{
-            padding:18px 25px;
-        }
-
-        nav a{
-            text-decoration:none;
-            color:#003366;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        nav a:hover{
-            color:#0099ff;
-        }
-
-        .hero{
-            text-align:center;
-            padding:70px 20px;
-        }
-
-        .hero h2{
-            font-size:38px;
-            color:#003366;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            font-size:20px;
-            max-width:800px;
-            margin:auto;
-            line-height:1.7;
-        }
-
-        .produtos{
-            padding:70px 10%;
-            background:white;
-        }
-
-        .produtos h2{
-            text-align:center;
-            margin-bottom:50px;
-            color:#003366;
-            font-size:34px;
-        }
-
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-            gap:25px;
-        }
-
-        .card{
-            background:#f9fbfc;
-            border-radius:12px;
-            padding:30px;
-            box-shadow:0 5px 20px rgba(0,0,0,.08);
-            transition:.3s;
-        }
-
-        .card:hover{
-            transform:translateY(-8px);
-        }
-
-        .card h3{
-            color:#004b8d;
-            margin-bottom:15px;
-        }
-
-        .card p{
-            line-height:1.6;
-        }
-
-        footer{
-            background:#002855;
-            color:white;
-            text-align:center;
-            padding:35px;
-            margin-top:50px;
-        }
-
-        footer a{
-            color:#7fd3ff;
-            text-decoration:none;
-        }
-    </style>
-</head>
-
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nauplio Analytics</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f8f4fc;color:#333}
+header{background:linear-gradient(135deg,#820AD1,#5A189A);padding:50px 20px;color:#fff;text-align:center}
+header img{width:540px;max-width:95%;background:#fff;padding:20px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+header h1{margin:25px 0 10px;font-size:48px}
+header p{font-size:24px;opacity:.95}
+.btn{display:inline-block;margin-top:30px;padding:16px 32px;background:#fff;color:#820AD1;text-decoration:none;border-radius:40px;font-weight:bold}
+nav{background:#fff;position:sticky;top:0;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+nav ul{display:flex;flex-wrap:wrap;justify-content:center;list-style:none}
+nav a{display:block;padding:18px;color:#5A189A;text-decoration:none;font-weight:bold}
+nav a:hover{color:#820AD1}
+.hero{padding:70px 10%;text-align:center}
+.hero h2{color:#5A189A;font-size:40px;margin-bottom:20px}
+.hero p{max-width:850px;margin:auto;font-size:20px;line-height:1.8}
+.prod{padding:70px 8%;background:#fff}
+.prod h2{text-align:center;color:#5A189A;font-size:36px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{background:#faf7ff;border-top:5px solid #820AD1;padding:28px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:#820AD1;margin-bottom:10px}
+.why{padding:70px 10%;text-align:center}
+.why h2{color:#5A189A;margin-bottom:25px}
+footer{background:#5A189A;color:#fff;text-align:center;padding:35px;margin-top:40px}
+</style></head>
 <body>
-
 <header>
-
-    <!-- Coloque o arquivo logo1png.png na mesma pasta do index.html -->
-    <img src="logo1png.png" alt="Logo Nauplio Analytics">
-
-    <h1>Nauplio Analytics</h1>
-
-    <p>Me chamo Beatriz e vou cuidar dos seus dados.</p>
-
+<img src="logo1png.png" alt="Logo">
+<h1>Nauplio Analytics</h1>
+<p>Transformando dados em decisões inteligentes.</p>
+<a class="btn" href="#servicos">Solicitar Orçamento</a>
 </header>
-
-<nav>
-
-<ul>
-    <li><a href="#dashboards">Dashboards</a></li>
-    <li><a href="#automacao">Automação de Planilhas</a></li>
-    <li><a href="#robos">Robôs</a></li>
-    <li><a href="#limpeza">Limpeza de Dados</a></li>
-    <li><a href="#sistemas">Sistemas</a></li>
-    <li><a href="#textos">Classificador de Textos</a></li>
-    <li><a href="#predicao">Modelos Preditivos</a></li>
-    <li><a href="#analises">Análises Mensais</a></li>
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<h2>Transformando dados em decisões inteligentes</h2>
-
-<p>
-A Nauplio Analytics desenvolve soluções em análise de dados,
-automação e inteligência artificial para empresas que desejam
-ganhar produtividade, reduzir custos e tomar decisões baseadas em dados.
-</p>
-
+<nav><ul>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul></nav>
+<section class="hero" id="sobre">
+<h2>Tecnologia para acelerar o crescimento da sua empresa</h2>
+<p>Desenvolvemos soluções em análise de dados, automação, inteligência artificial e sistemas sob medida para transformar informações em resultados.</p>
 </section>
-
-<section class="produtos">
-
-<h2>Produtos e Serviços</h2>
-
+<section class="prod" id="servicos">
+<h2>Serviços</h2>
 <div class="grid">
-
-<div class="card" id="dashboards">
-<h3>📊 Dashboards</h3>
-<p>Painéis interativos em Power BI, Looker Studio e outras plataformas para acompanhar indicadores em tempo real.</p>
+<div class="card"><h3>📊 Dashboards</h3><p>Painéis interativos em Power BI e Looker Studio.</p></div>
+<div class="card"><h3>⚙️ Automação de Planilhas</h3><p>Automatize processos repetitivos com Python.</p></div>
+<div class="card"><h3>🤖 Robôs</h3><p>Robôs para coleta, integração e processamento de dados.</p></div>
+<div class="card"><h3>🧹 Limpeza de Dados</h3><p>Padronização e tratamento de bases de dados.</p></div>
+<div class="card"><h3>💻 Sistemas Simples</h3><p>Sistemas personalizados para gestão interna.</p></div>
+<div class="card"><h3>🧠 Classificador de Textos</h3><p>IA para classificar documentos e mensagens.</p></div>
+<div class="card"><h3>📈 Modelos Preditivos</h3><p>Machine Learning para previsões e tomada de decisão.</p></div>
+<div class="card"><h3>📋 Análises Mensais</h3><p>Acompanhamento contínuo dos indicadores do seu negócio.</p></div>
 </div>
-
-<div class="card" id="automacao">
-<h3>⚙️ Automação de Planilhas</h3>
-<p>Automatização de tarefas repetitivas em Excel e Google Sheets utilizando Python e integrações inteligentes.</p>
-</div>
-
-<div class="card" id="robos">
-<h3>🤖 Robôs</h3>
-<p>Robôs para coleta de informações, preenchimento automático, geração de relatórios e execução de processos.</p>
-</div>
-
-<div class="card" id="limpeza">
-<h3>🧹 Limpeza de Dados</h3>
-<p>Tratamento, padronização e organização de bases de dados para garantir qualidade das informações.</p>
-</div>
-
-<div class="card" id="sistemas">
-<h3>💻 Sistemas Simples</h3>
-<p>Desenvolvimento de sistemas personalizados para controle interno, cadastros e gerenciamento de processos.</p>
-</div>
-
-<div class="card" id="textos">
-<h3>🧠 Classificador de Textos</h3>
-<p>Soluções utilizando Inteligência Artificial para classificação automática de documentos, e-mails e mensagens.</p>
-</div>
-
-<div class="card" id="predicao">
-<h3>📈 Modelos Preditivos</h3>
-<p>Modelos de Machine Learning para previsão de vendas, demanda, churn, riscos e outros indicadores.</p>
-</div>
-
-<div class="card" id="analises">
-<h3>📋 Análises Mensais para Empresas</h3>
-<p>Relatórios recorrentes, indicadores estratégicos e acompanhamento contínuo dos resultados do seu negócio.</p>
-</div>
-
-</div>
-
 </section>
-
-<footer>
-
-<p><strong>Nauplio Analytics</strong></p>
-
-<p>Transformando dados em resultados.</p>
-
-<p>
-🌐 <strong>nauplioanalytics.com.br</strong>
-</p>
-
+<section class="why">
+<h2>Por que escolher a Nauplio Analytics?</h2>
+<p>✔ Soluções sob medida • ✔ Automação inteligente • ✔ Redução de custos • ✔ Decisões orientadas por dados</p>
+</section>
+<footer id="contato">
+<h3>Nauplio Analytics</h3>
+<p>nauplioanalytics.com.br</p>
+<p>contato@nauplioanalytics.com.br</p>
 </footer>
-
-</body>
-</html>
+</body></html>
